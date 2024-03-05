@@ -1272,7 +1272,7 @@ namespace bgfx { namespace d3d11
 					g_caps.limits.maxComputeBindings = bx::min(BGFX_MAX_COMPUTE_BINDINGS
 						, D3D_FEATURE_LEVEL_11_1 <= m_featureLevel
 						? D3D11_1_UAV_SLOT_COUNT
-						: D3D11_PS_CS_UAV_REGISTER_COUNT
+						: 16
 						);
 
 					g_caps.supported |= BGFX_CAPS_TEXTURE_COMPARE_ALL;
